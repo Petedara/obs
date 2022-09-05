@@ -1,0 +1,55 @@
+.navbar {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+ box-shadow: 5px 5px 5px rgb(165, 163, 163);
+}
+
+.courses-tab{
+    display: flex;
+    justify-content: space-between;
+}
+
+.free-course-tab{
+  background-image:  
+    linear-gradient(to right, rgb(120, 120, 151), rgb(105, 125, 238) 50%);
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+.bonus{
+  background-image:  
+    linear-gradient(to right,rgb(230, 157, 169), rgb(236, 75, 75) 50%);
+  border-radius: 20px;
+  margin-left: 20px;
+}
+
+.free-course-tab:hover, .bonus:hover{
+  border-radius: 5px;
+  transition: all 1s;
+}
+
+.free-course-tab span, .bonus span{
+  color: white !important;
+  margin: 10px;
+}
+
+.navbar > h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  color: #9b9b84;
+}
+
+.navbar > div {
+  padding-top: 5px;
+}
+
+.navbar span {
+  white-space: nowrap;
+  margin: 0 16px;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}

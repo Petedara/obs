@@ -1,0 +1,262 @@
+.free-course{
+    display: flex;
+    /* background:
+    radial-gradient(at 50% 0, rgba(0, 0, 0, 1), transparent 100%),
+    linear-gradient(0deg, #ddd, transparent 50%) bottom;
+  background-size: 100% 8px;
+  background-repeat: no-repeat; */
+}
+
+.course-grid{
+    position: sticky;
+}
+
+.course-name{
+    max-width: 400px;
+    position: relative;
+    padding: 30px 23px;
+}
+
+.course-name >div{
+    max-width: 400px;
+    min-width: 255px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px 0;
+    box-shadow: .2px .2px 1px 1px solid black;
+}
+
+.course-name strong{
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+/* .course-topics{
+    max-height: 0;
+    overflow: hidden;
+} */
+
+.course-list.active .course-topics{
+    max-height:100%;
+}
+
+.course-topics{
+    /* display: none; */
+}
+
+.course-name strong:last-child{
+    border: none !important;
+}
+
+.course-title > strong{
+    position: relative;
+    left: 7px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.topic, .sub-topic{
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.topic:last-child, .sub-topic:last-child{
+    border: none;
+}
+
+.course-topics:hover .topic, .course-topics:hover .sub-topic{
+    border: none;
+}
+
+.topic > div, .sub-topic > div{
+    font-size: 15px;
+    margin: 0;
+}
+
+.topic:hover, .sub-topic:hover{
+    background-color: rgba(0, 0, 0, .1);
+    box-shadow: 2px 2px rgba(0, 0, 0, .5);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.outline{
+    margin-right: 13px;
+}
+
+.outline input{
+    margin: 0;
+    padding: 8px 20px;
+    color: blue;
+}
+
+.sub-topic-outline{
+    margin-right: 15px;
+}
+
+.sub-topic-outline input{
+    margin: 0;
+    padding: 8px 15px 8px 25px;
+    color:blue;
+}
+
+.course-display{
+    /* background-color: red; */
+}
+
+.course-video{
+    padding: 30px 10px 0;
+    position: relative;
+    /* background-color: red; */
+    max-width: 800px;
+}
+
+.course-video video{
+    max-width: 100%;
+}
+
+.video-title{
+    position: relative;
+    max-width: 800px;
+    padding: 8px 10px;
+}
+
+
+
+.video-title strong{
+    font-size: 19px;
+    line-height: 1;
+    font-weight: 400;
+    width: 100%;
+}
+
+.border-bottom{
+    /* font-size: 5px; */
+    /* color: rgb(0, 0, 0, .1); */
+    /* color: #fff !important; */
+    /* background-color: red; */
+    margin-top: 4px;
+}
+
+hr{
+    /* color: red !important; */
+}
+
+.description-title{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0px 10px;
+    color: #1C1D1F;
+}
+
+.description{
+    margin: 0;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.make-comment{
+    display: flex;
+    padding: 5px 10px;
+    margin-bottom: 25px;
+}
+
+.profile-background i{
+    font-size: 33px;
+    width: 37px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #636060;
+    border-radius: 50%;
+    color: #f3f2ef;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-60%);
+    transform: translateY(-60%);
+}
+
+.input-plate{
+    width: 100%;
+    margin-left: 15px;
+}
+
+.input-plate input{
+    font-size: 17px;
+    border: none;
+    background-color: transparent;
+    padding-left: 3px;
+}
+
+.input-plate input:focus{
+    outline: none;
+}
+
+.action-on-comment{
+    display: flex;
+    float: right;
+}
+
+.cancle-comment{
+    background-color: #E60030;
+    box-shadow: 5px 28px  rgba(0, 0, 0, .3) inset;
+    padding: 3px 10px;
+    margin: 4px 0 0 15px;
+    cursor: pointer;
+}
+
+.send-comment{
+    background-color: #0084B4;
+    margin-left: 15px;
+    padding: 3px 10px;
+    margin: 4px 0 0 15px;
+    cursor: pointer;
+}
+
+.comment-section{
+    display: flex;
+}
+
+.profile-photo i{
+    display: flex;
+    justify-content: center;
+    background-color: #636060;
+    color: white;
+    width: 25px;
+    height: 25px;
+    font-size: 22px;
+    padding: 4px;
+    border-radius: 50%;
+    margin-top: 3px;
+}
+
+.comment-section{
+    padding: 5px 10px;
+}
+
+.name-and-comment{
+    margin-left: 10px;
+}
+
+.profile-name{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.image-url{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 23px;
+}
+
+.anchor-image{
+    position: relative;
+    max-width: 400px;
+}
+
+.image-url img{
+    width: 100%;
+}
