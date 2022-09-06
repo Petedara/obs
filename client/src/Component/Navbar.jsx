@@ -5,17 +5,19 @@ import "./navbar.css";
 const Navbar = () => {
   return (
     <header className="navbar">
-      <Link to="/">
-        <h4>Online Business Startup</h4>
+      <Link to="/" className="link logo">
+        <strong>Online Business Startup</strong>
       </Link>
       <div className="courses-tab">
         <div className="free-course-tab">
-          <Link to="/courses">
+          <Link to="/courses" className="link course-link">
             <span>Free course</span>
           </Link>
         </div>
         <div className="bonus">
-          <span>Bonus</span>
+          <Link to="/bonus" className="link course-link">
+            <span>Bonus</span>
+          </Link>
         </div>
       </div>
       <div>

@@ -6,9 +6,20 @@
  box-shadow: 5px 5px 5px rgb(165, 163, 163);
 }
 
+.link{
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logo{
+  font-size: 22px;
+  color: #9b9b84;
+}
+
 .courses-tab{
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .free-course-tab{
@@ -35,11 +46,11 @@
   margin: 10px;
 }
 
-.navbar > h4 {
-  margin: 0;
+.navbar > strong {
+  margin: 0 !important;
   padding: 0;
-  font-size: 22px;
-  color: #9b9b84;
+  /* font-size: 52px;
+  color: #9b9b84; */
 }
 
 .navbar > div {
