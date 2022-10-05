@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 
 const Navbar = () => {
+
+  useEffect(() => {
+    fetch("/api")
+      .then((res) => res.json())
+      .then((data) => {
+        console.log("backend data", data);
+      });
+  });
+
   return (
     <header className="navbar">
       <Link to="/" className="link logo">
@@ -20,9 +29,16 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
-      <div>
-        <span>Sign in</span>
-        <span>Sign up</span>
+      <div className="make-post">
+        <Link to="/post">Post</Link>
+      </div>
+      <div className="registration">
+        <Link to="/login" className="sign-in">
+          <span>Sign in</span>
+        </Link>
+        <Link to="/register" className="sign-up">
+          <span>Sign up</span>
+        </Link>
       </div>
     </header>
   );

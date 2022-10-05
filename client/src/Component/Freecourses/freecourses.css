@@ -55,6 +55,10 @@
     font-weight: 600;
 }
 
+.topic{
+    background-color: #ddd;
+}
+
 .topic, .sub-topic{
     display: flex;
     border-bottom: 1px solid rgba(0, 0, 0, .5);
@@ -86,9 +90,9 @@
 }
 
 .outline input{
-    margin: 0;
-    padding: 8px 20px;
-    color: blue;
+    margin: .5rem;
+    padding: 20px;
+    background-color: blue;
 }
 
 .sub-topic-outline{

@@ -40,13 +40,13 @@ const Freecourses = () => {
               >
                 <div className="course-drop-down">
                   <div className="topic" onClick={toggleIsAccordion}>
-                    <div className="outline">
-                     <input type="radio" />
-                    </div>
                     <div>
                       {" "}
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Eum, tempore.
+                    </div>
+                    <div className="outline">
+                      <i class="fa-solid fa-chevron-down"></i>
                     </div>
                   </div>
                   <div
